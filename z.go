@@ -4,6 +4,11 @@
 //
 //  1. Make the best commonly used utilities discoverable
 //  2. Reduce hand strain; "I can finally stop writing `func must(...)` everywhere!"
+//
+// The z module contains several specialized packages to help organize utilities by category:
+//
+// - [github.com/njhale/z/zchan] channels
+// - [github.com/njhale/z/zk8s] kubernetes
 package z
 
 import (
