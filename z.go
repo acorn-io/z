@@ -23,14 +23,14 @@ func MustBe[T any](t T, err error) T {
 	return t
 }
 
-// P returns a pointer to v.
-func P[T any](v T) *T {
+// Pointer returns a pointer to v.
+func Pointer[T any](v T) *T {
 	return &v
 }
 
-// D returns the dereferenced value of p.
+// Dereference returns the dereferenced value of p.
 // If p is nil, the zero value of T is returned instead.
-func D[T any](p *T) (v T) {
+func Dereference[T any](p *T) (v T) {
 	if p != nil {
 		v = *p
 	}

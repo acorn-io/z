@@ -15,7 +15,7 @@ First off, it's a much better name than 'y'.
 
 Besides that, the choice in name is supported by a few rules-of-thumb:
 
-- A smaller package name is more ergonomic (`z.P("foo")` vs. `utils.P("foo")`)
+- A smaller package name is more ergonomic (`z.Pointer("foo")` vs. `utils.Pointer("foo")`)
 - The last letter of the alphabet is _probably definitely_ less likely to be shadowed by dependents 
 - It's memorable (and fun to say out loud while typing!)
 
