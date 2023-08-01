@@ -30,6 +30,9 @@ func Pointer[T any](v T) *T {
 
 // Dereference returns the dereferenced value of p.
 // If p is nil, the zero value of T is returned instead.
+// This function is intended to be used to dereference native types (e.g. *int, *string, etc.);
+// for structs, use of Dereference may decrease readability and obscure intent, so prefer a conditional
+// (e.g. `if p != nil { ... }`) instead.
 func Dereference[T any](p *T) (v T) {
 	if p != nil {
 		v = *p
